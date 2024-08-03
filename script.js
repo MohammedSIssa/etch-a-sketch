@@ -16,43 +16,8 @@ function makeGrid(num){
       let cell = document.createElement('div')
       cell.className = "cell default"
       cell.id = `cell-${i}-${j}`
-      if(num <= 24 && num > 16) {
-        cell.style.height = "30px"
-        cell.style.width = "30px"
-      }
-      else if(num <= 16 && num > 10) {
-        cell.style.height = "40px"
-        cell.style.width = "40px"
-      }
-      else if(num <= 10 && num > 5){
-        cell.style.height = "75px"
-        cell.style.width = "75px"
-      }
-      else if(num <= 5 && num > 2) {
-        cell.style.height = "125px"
-        cell.style.width = "125px"
-      }
-      else if(num <= 2) {
-        cell.style.height = "250px"
-        cell.style.width = "250px"
-      }
-      else if (num <= 32 && num > 24) {
-        cell.style.height = "20px"
-        cell.style.width = "20px"
-      }
-      else if (num <= 48 && num > 32) {
-        cell.style.height = "14px"
-        cell.style.width = "14px"
-      }
-      else if(num <= 58 && num > 48){
-        cell.style.height = "12px"
-        cell.style.width = "12px"
-      }
-      else {
-        cell.style.height = "10px"
-        cell.style.width = "10px"
-        cell.style.borderColor = "rgba(22,22,22,0.6)"
-      }
+      cell.style.height = `${600 / num}px`
+      cell.style.width = `${600 / num}px`
       row.appendChild(cell)
     }
     sketchContainer.appendChild(row)
