@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --border-col: #242424;
+}
+
+body {
+  /* background-color: #242936; */
+  background-color: #f5f1ef;
+  color: var(--border-col);
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.inked {
+  transition: all 2s;
+}
+
+.cell {
+  border: 2px solid var(--border-col);
+  border-right: none;
+  border-bottom: none;
+  background-color: transparent;
+}
+
+.cell:last-child {
+  border-right: 2px solid var(--border-col);
+}
+
+.cell:first-child {
+  border-right: none;
+}
+
+.row:first-child > .cell {
+  border-bottom: none;
+}
+
+.row:last-child > .cell {
+  border-top: 2px solid var(--border-col);
+  border-bottom: 2px solid var(--border-col);
+}
+
+.row:first-child > .cell:first-child {
+  border-top-left-radius: 50%;
+}
+
+.row:first-child > .cell:last-child {
+  border-top-right-radius: 50%;
+}
+
+.row:last-child > .cell:first-child {
+  border-bottom-left-radius: 50%;
+}
+
+.row:last-child > .cell:last-child {
+  border-bottom-right-radius: 50%;
+}
+
+.container {
+  display: flex;
+  height: 100svh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-0 {
+  background-color: #0098fd;
+}
+
+.color-1 {
+  background-color: #e50914;
+}
+
+.color-2 {
+  background-color: #f4dd10;
+}
+
+.color-4 {
+  background-color: #a044fd;
+}
+
+.color-5 {
+  background-color: #00dd59;
+}
+
+.color-6 {
+  background-color: #ff7300;
+}
+
+.color-7 {
+  background-color: #f700ff;
+}
+
+.color-8 {
+  background-color: #d50000;
+}
+
+.color-9 {
+  background-color: #fa3051;
+}
+
+.color-10 {
+  background-color: #ff9c11;
+}
+
+.color-11 {
+  background-color: #4f26a2;
+}
+
+.color-12 {
+  background-color: #e2682f;
+}
+
+.color-13 {
+  background-color: #00ddd2;
+}
+
+button.create-grid {
+  background-color: transparent;
+  border: none;
+  padding: 16px 48px;
+  border: 2px solid var(--border-col);
+  margin: 10px;
+  color: var(--border-col);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sketch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.5s;
+  width: 900px;
+  height: 900px;
+}
+
+input[type=range] {
+  accent-color: #121212;
+}
