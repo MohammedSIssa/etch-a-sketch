@@ -147,8 +147,8 @@ button.create-grid {
   align-items: center;
   justify-content: center;
   transition: all 1.5s;
-  width: 900px;
-  height: 900px;
+  width: 1100px;
+  height: 1100px;
 }
 
 input[type=range] {
