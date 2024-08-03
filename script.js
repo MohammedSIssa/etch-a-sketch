@@ -37,20 +37,20 @@ function makeGrid(num){
         cell.style.width = "250px"
       }
       else if (num <= 32 && num > 24) {
-        cell.style.height = "25px"
-        cell.style.width = "25px"
+        cell.style.height = "20px"
+        cell.style.width = "20px"
       }
       else if (num <= 48 && num > 32) {
-        cell.style.height = "16px"
-        cell.style.width = "16px"
+        cell.style.height = "14px"
+        cell.style.width = "14px"
       }
       else if(num <= 58 && num > 48){
-        cell.style.height = "13px"
-        cell.style.width = "13px"
-      }
-      else {
         cell.style.height = "12px"
         cell.style.width = "12px"
+      }
+      else {
+        cell.style.height = "10px"
+        cell.style.width = "10px"
         cell.style.borderColor = "rgba(22,22,22,0.6)"
       }
       row.appendChild(cell)
